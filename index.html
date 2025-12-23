@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Elias | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container header-row">
+      <div class="brand">
+        <span class="brand-mark">★</span>
+        <div>
+          <h1 class="brand-title">Elias</h1>
+          <p class="brand-subtitle">Business Student • Web Portfolio</p>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <a class="nav-link active" href="index.html">Home</a>
+        <a class="nav-link" href="resume.html">Resume</a>
+        <a class="nav-link" href="projects.html">Projects</a>
+        <a class="nav-link" href="gallery.html">Gallery</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card hero">
+      <div class="hero-text">
+        <h2 class="headline">Hi! I’m Elias 👋</h2>
+        <p class="lead">
+          Welcome to my portfolio website. I am a Business student based in Beirut, Lebanon, with a strong
+          interest in technology and finance. This website showcases my skills, projects, and areas of interest,
+          built using HTML, CSS, and a bit of JavaScript.
+        </p>
+
+        <ul class="bullets">
+          <li>✓ Clean navigation across 4 pages</li>
+          <li>✓ Tables, lists, images, and a working form</li>
+          <li>✓ Designed as a professional student portfolio</li>
+        </ul>
+
+        <div class="actions">
+          <a class="btn" href="projects.html">See Projects</a>
+          <a class="btn btn-outline" href="resume.html">View Resume</a>
+        </div>
+      </div>
+
+      <div class="hero-image">
+        <img src="images/profile.jpg" alt="Profile photo of Elias Mawwas" />
+        <p class="caption">Tip: use a professional-looking photo.</p>
+      </div>
+    </section>
+
+    <section class="grid-2">
+      <section class="card">
+        <h3>Skills Table</h3>
+        <p class="muted">A quick summary of what I’ve practiced so far.</p>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Skill</th>
+                <th>Level</th>
+                <th>Example Use</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>HTML</td>
+                <td>Intermediate</td>
+                <td>Multi-page site structure</td>
+              </tr>
+              <tr>
+                <td>CSS</td>
+                <td>Intermediate</td>
+                <td>Layout, colors, responsive design</td>
+              </tr>
+              <tr>
+                <td>JavaScript</td>
+                <td>Beginner</td>
+                <td>Form interaction and small features</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="card">
+        <h3>About Me</h3>
+        <p>
+          I am a Business student with a strong interest in financial engineering, money, and technology.
+          I enjoy learning how digital tools and data-driven systems can be applied to business and finance,
+          and I aim to continuously develop both my technical and analytical skills.
+        </p>
+
+        <h4>Quick Facts</h4>
+        <ul class="bullets">
+          <li>📍 Location: Beirut, Lebanon</li>
+          <li>🎯 Goal: Build and grow my own business</li>
+          <li>💡 Interests: financial engineering, money, and technology</li>
+        </ul>
+      </section>
+    </section>
+
+    <section class="card">
+      <h3>Contact / Feedback Form</h3>
+      <p class="muted">This form shows form elements working (no server needed).</p>
+
+      <form id="contactForm" class="form">
+        <div class="form-row">
+          <label>
+            Your Name
+            <input name="name" type="text" placeholder="Enter your name" required />
+          </label>
+
+          <label>
+            Email
+            <input name="email" type="email" placeholder="eliassmawas@gmail.com" required />
+          </label>
+        </div>
+
+        <label>
+          Topic
+          <select name="topic" required>
+            <option value="">Choose one…</option>
+            <option>Feedback</option>
+            <option>Project Question</option>
+            <option>Collaboration</option>
+          </select>
+        </label>
+
+        <label>
+          Message
+          <textarea name="message" rows="5" placeholder="Write your message..." required></textarea>
+        </label>
+
+        <label class="checkbox">
+          <input name="agree" type="checkbox" required />
+          <span>I agree this message is respectful and appropriate.</span>
+        </label>
+
+        <button class="btn" type="submit">Send Message</button>
+        <p id="formStatus" class="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <p>© <span id="year"></span> Elias • Built with HTML/CSS/JS</p>
+      <p class="muted">Symbols used: ★ ✓ 👋 📍 🎯 💡</p>
+    </div>
+  </footer>
+</body>
+</html>
